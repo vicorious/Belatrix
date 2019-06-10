@@ -63,6 +63,10 @@ public abstract class Constant
 		
 		public static final String REGEX_NAME_PAGE_WWW = "(http|https)\\:\\//\\www\\.(.+)?\\.com";
 		
+		public static final String REGEX_FIRST_ARG = ".+?\\.txt";
+		
+		public static final String REGEX_LAST_ARG = "[A-Za-z0-9]+\\/[A-Za-z0-9]+\\/[A-Za-z0-9]+";
+		
 	}
 	
 	/**
@@ -101,6 +105,8 @@ public abstract class Constant
 	    public static final String DONE = "Done";
 	    
 	    public static final String FINISH = "Finish!";
+	    
+	    public static final String FIRST_ARGUMENT_ERROR = "The first argument must be a Path with the url file (this/is/a/path/withmyurlfiles.txt)";
 		
 	}
 	
