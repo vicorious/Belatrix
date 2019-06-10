@@ -37,6 +37,11 @@ public class URLFacade
 		{
 			throw new IllegalArgumentException(ConstantMessage.ARG_INVALID);
 		}
+		
+		if(RegularExpressions.getValueFromExpression(ConstantRegex.REGEX_FIRST_ARG, _path).isEmpty())
+		{
+			throw new IllegalArgumentException(ConstantMessage.FIRST_ARGUMENT_ERROR);
+		}
 		 
 		try (BufferedReader br = Files.newBufferedReader(Paths.get(_path))) 
 		{
